@@ -123,15 +123,15 @@ if($error[0] == "" && $error[1] == "" && $error[2] == "" && $error[3] == "" && $
         }
         else{
             echo 'połączono z bazą';
-            echo $_POST['imie'];
-            echo $_POST['nazwisko'];
-            echo $_POST['login'];
-            echo $_POST['mail'];
-            echo $_POST['haslo1'];
+            // echo $_POST['imie'];
+            // echo $_POST['nazwisko'];
+            // echo $_POST['login'];
+            // echo $_POST['mail'];
+            // echo $_POST['haslo1'];
             $datadodania = date("Y-m-d");
             // zmienne 
         $sql = "INSERT INTO users( imie, nazwisko, login, mail, haslo, regulamin, dataDodania)
-         VALUES ('$imie','$nazwisko','$login','$mail','$haslo1','true','$datadodania')";
+         VALUES ('$imie','$nazwisko','$login','$mail','$haslo1', true,'$datadodania')";
         mysqli_query($conn, $sql);
         mysqli_close($conn);
         }
