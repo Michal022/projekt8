@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 480px;
+            overflow: hidden;
+            position: relative;
+        }
+        img{
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            min-width: 100%;
+            min-height: 100%;
+            opacity: 0;
+            animation: slider 15s infinite linear;
+        }
+        
+        img:nth-of-type(2){
+            animation-delay: 5s;
+        }
+        img:nth-of-type(3){
+            animation-delay: 10s;
+            
+        }
+        h1{
+            position: absolute;
+            font-size: 60px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, .6);
+            padding: 20px 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            top: 30%;
+            left: 10%;
+            opacity: 0;
+            animation: txt 15s infinite linear;
+        }
+        h1:nth-of-type(1){
+            left: 5%;
+            top: 5%;
+        }
+        h1:nth-of-type(2){
+            animation-delay: 5s;
+        }
+        
+        h1:nth-of-type(3){
+            animation-delay: 10s;
+            left: 60%;
+            bottom: 5%;
+        }
+        @keyframes slider{
+        0%{
+            opacity: 0;
+        }
+        5%{
+            opacity: 1;
+        }
+        33.33%{
+            opacity: 1;
+        }
+        38.33%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+        
+        
+        }
+        @keyframes txt{
+        0%{
+            opacity: 0;
+        }
+        5%{
+            opacity: 1;
+        }
+        33.33%{
+            opacity: 1;
+        }
+        38.33%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+        
+        
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/img1.jpg" alt="" srcset="">
+        <img src="img/img2.jpg" alt="" srcset="">
+        <img src="img/img3.jpg" alt="" srcset="">
+        <h1>Lorem, ipsum dolor.</h1>
+        <h1>Lorem, ipsum dolor.</h1>
+        <h1>Lorem, ipsum dolor.</h1>
+
+    </header>
+</body>
+</html>
