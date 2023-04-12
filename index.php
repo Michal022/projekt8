@@ -92,16 +92,16 @@
     <h6 class="card-subtitle mb-2 text-muted">jeśli nie masz konta załóż je</h6>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="signup.php" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+    
   </div>
 </div></div>
         <div class="col-md-4 offset-md-2 box-margin"><div class="card" style="">
   <div class="card-body">
     <h5 class="card-title">zaloguj się</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+    <h6 class="card-subtitle mb-2 text-muted">zaloguj sie</h6>
+    <p class="card-text">zaloguj sie aby uzyskać dostęp do większej treści</p>
+    <a href="signin.php" class="card-link">zaloguj sie</a>
+    
   </div>
 </div></div>
     </div>
