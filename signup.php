@@ -137,3 +137,4 @@ if($error[0] == "" && $error[1] == "" && $error[2] == "" && $error[3] == "" && $
         }
 }
 ?> 
+<?php include('site/footer.php'); ?>

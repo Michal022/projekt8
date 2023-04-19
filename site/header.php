@@ -125,7 +125,14 @@
           <a class="nav-link" href="signin.php">sign in</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+        <a class="nav-link" href="kurs.php">Kurs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.php">kontakt</a>
+        </li>
+          <a class="nav-link disabled">Disabled</a> </li>
+        
+
         </li>
       </ul>
     </div>

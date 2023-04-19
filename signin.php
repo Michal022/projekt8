@@ -2,10 +2,32 @@
     
 <?php 
 session_start();
-if (isset($_SESSION['loginSession'])){
-    echo "jest sesja";
-    unset($_SESSION['loginSession']);
-}else{
+if(isset($_SESSION['loginSession'])){
+    if(isset($_POST['logout'])) {
+    unset ($_SESSION['loginSession']);
+    header('location: signin.php');
+    } else {
+?>
+
+<div class="container">
+<div class="row">
+    <div class="col-12">
+        <h1>Wylogowywanie</h1>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-12">
+        <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post"> 
+            <button type="submit" class="btn btn-primary" name='logout'>Log Out</button>
+             </form>
+        </div>
+    </div>
+</div>
+<?php 
+}
+} else {
 if (isset($_POST['submit'])){
  $login=htmlspecialchars($_POST['login']);
  $pass =htmlspecialchars($_POST['password']);
@@ -25,7 +47,7 @@ if (isset($_POST['submit'])){
             echo "prawidłowe";
             $flag= false;
             $_SESSION['loginSession']='start';
-            header('location: login.php');
+            header('location: signin.php');
             // break;
             
          } //else {
@@ -83,6 +105,8 @@ if (isset($_POST['submit'])){
 
 
 
+
 <?php } ?>
 </body>
 </html>
+<?php include('site/footer.php'); ?>
