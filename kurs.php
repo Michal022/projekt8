@@ -24,9 +24,9 @@ if (isset($_SESSION['loginSession'])) {
                     <div class="card">
                         <img src="https://picsum.photos/300/200?random=3" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Kursy</h5>
+                            <h5 class="card-title">Kurs1</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="kurs1" class="btn btn-primary">kurs1</a>
                         </div>
                     </div>
                     <br>
