@@ -2,12 +2,7 @@
 <?php
 $error = array("", "", "", "", "",true,true);
 if (isset($_POST['submit'])) {
-    $numer = htmlspecialchars($_POST['numer']);
-    if ($numer == $_POST['codesave']) {
-        $error[6] = true;
-    }else{
-        $error[6]=false;
-    }
+    
     $imie = htmlspecialchars($_POST['imie']);
     if ($imie == "" || strlen($imie) < 3) {
         $error[0] = "Brak imienia.";
@@ -42,6 +37,11 @@ if (isset($_POST['submit'])) {
     }
     $numer = htmlspecialchars($_POST['numer']);
     $codesave = htmlspecialchars($_POST['codesave']);
+    if ($code == $codesave) {
+        $error[6] = true;
+    } else {
+        $error[6] = false;
+    }   
 
 }
 ?>
@@ -98,6 +98,7 @@ placeholder="nazwa@mail.com
                 </div>
                 <div class="mb-3">
                     <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="powtórz hasło" name="haslo2">
+                    
                 </div>
                 <div class="form-check">
                     <?php
